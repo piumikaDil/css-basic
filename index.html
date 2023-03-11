@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS</title>
     <link rel="icon" type="image/x-icon" href="assets/icons/image-4 (1).ico" />
+
+    <!-- Internal CSS -->
+    <style>
+      /* type_selector */
+      h2 {
+        color: red;
+        text-decoration: underline;
+      }
+      p {
+        font-size: 20px;
+      }
+      /* class_selector */
+      .main_text {
+        color: antiquewhite;
+        background-color: black;
+      }
+      /* Id_selector */
+      #par {
+        background-color: cadetblue;
+      }
+      /* universal_selector */
+      * {
+        color: blueviolet;
+      }
+      /* attribute_selector */
+      p[id] {
+        font-weight: bold;
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
   </head>
   <body>
     <!-- Inline CSS -->
@@ -19,17 +49,23 @@
     >
       Welcome to software developments
     </h1>
-    <p>
+    <p class="main_text">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab hic deleniti
       voluptas eius excepturi sunt debitis enim culpa fuga, quis commodi aliquid
       consequuntur quaerat, iure facere nemo odit odio voluptate?
     </p>
     <h2>Welcome to Frontend Engineering</h2>
-    <p>
+    <p id="par" class="main_text">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae et
       qui iste magnam temporibus odio officiis consequuntur. Qui explicabo
       accusantium animi, impedit totam blanditiis ut ipsum consequuntur incidunt
       alias fuga?
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi fugit
+      quod corrupti recusandae doloribus quasi impedit, qui, aliquid possimus
+      dolores accusantium, at eligendi aliquam? Exercitationem nobis laborum
+      perferendis quia atque.
     </p>
   </body>
 </html>
