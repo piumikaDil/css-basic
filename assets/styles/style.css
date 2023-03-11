@@ -1,0 +1,86 @@
+/* external_css */
+
+h2 {
+  color: red;
+  text-decoration: underline;
+}
+
+p {
+  font-size: 20px;
+}
+
+.main_text {
+  color: antiquewhite;
+  background-color: black;
+}
+
+#par {
+  background-color: cadetblue;
+}
+
+* {
+  color: blueviolet;
+}
+
+p[id] {
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a[href="https://www.youtube.com/"]
+{
+  color: black;
+}
+
+a[href$=".lk"] {
+  color: brown;
+}
+
+a[href^="www"] {
+  color: darkcyan;
+}
+
+a[href*="image"] {
+  color: darkmagenta;
+}
+
+input[type="text"] {
+  color: black;
+}
+
+li {
+  color: brown;
+}
+
+li:first-child {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+li:last-child {
+  text-transform: uppercase;
+}
+
+li:nth-child(2) {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.sub-p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+}
+
+.sub-w {
+  color: brown;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: darkgoldenrod;
+  border: 5px solid black;
+}
+
+.box:hover {
+  background-color: blueviolet;
+}
