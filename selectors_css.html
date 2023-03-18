@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS_2</title>
+  </head>
+  <body>
+    <style>
+      #firstH1 {
+        color: aquamarine;
+      }
+
+      .paragraph {
+        color: blueviolet;
+      }
+
+      * {
+        font-weight: bold;
+      }
+
+      /* Attribute selector */
+      [class] {
+        background-color: burlywood;
+      }
+
+      /* Attribute selector with */
+      [class="paragraph2"] {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Attribute selector with type selector */
+      p[class="paragraph2"] {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      [href="https://www.youtube.com/"]
+      {
+        text-decoration: none;
+      }
+
+      /* Attribute selector with starting value*/
+      [href^="https"] {
+        background-color: darkseagreen;
+      }
+
+      /* Attribute selector with end value*/
+      [href$=".com/"] {
+        color: azure;
+      }
+
+      /* Attribute selector with given value sneppts*/
+      [href*="guide"] {
+        color: darkslategray;
+      }
+
+      /* Attribute selector with given word*/
+      [href~="hi"] {
+        color: aliceblue;
+        background-color: black;
+      }
+
+      /* Attribute selector with class selector*/
+      .helloClass[href] {
+        color: blue;
+      }
+
+      /*-------------------- psudo class selector (:) --> add style to state of element------------------------------- */
+      h1:hover {
+        color: beige;
+      }
+
+      /*  :active -->apply style when click on the element */
+      h1:active {
+        background-color: blueviolet;
+      }
+      /* style for visited link  */
+      a:visited {
+        color: orange;
+      }
+
+      a:link {
+        color: brown;
+      }
+
+      :focus {
+        background-color: green;
+      }
+
+      input:focus {
+        background-color: blueviolet;
+      }
+
+      li:first-child {
+        color: red;
+      }
+
+      li:last-child {
+        color: darkmagenta;
+      }
+
+      li:nth-child(3) {
+        color: brown;
+      }
+
+      /* :only-child --> If list have only one child then select it */
+      li:only-child {
+        color: aqua;
+      }
+
+      /* ----------------------------psudo Element selector (::)--------------------------------------------- */
+
+      /* ::before --> add a content before the current content and style it */
+      h1::before {
+        content: " 👌";
+      }
+
+      /* ::after --> add a content after  the current content and style it */
+      h1::after {
+        content: "-End";
+      }
+
+      /* ::first-letter --> add style to first letter */
+      p::first-letter {
+        font-size: 30px;
+      }
+
+      /* ::first-line --> add style to first line */
+      p::first-line {
+        color: red;
+      }
+
+      /* we can catch derectly a specific placeholder */
+      input[placeholder="Name"]::placeholder {
+        color: aqua;
+      }
+
+      /* we can catch derectly file button */
+      ::file-selector-button {
+        cursor: pointer;
+      }
+
+      /* psudo_class selector + psudo_element selector */
+      ::file-selector-button:hover {
+        color: brown;
+      }
+
+      /* style web content selection(highlight and select) */
+      ::selection {
+        background-color: black;
+        color: white;
+      }
+
+      /* ----------------------------------------------------------------------------------------------- */
+
+      /* ::marker -->style marker in html lists */
+      li:hover::marker {
+        content: "❤";
+      }
+
+      /* Group selector */
+      h2,
+      h3 {
+        color: red;
+      }
+    </style>
+
+    <h1>Good Morning</h1>
+    <h2>hi...</h2>
+    <h3>How are you!</h3>
+    <h1 id="firstH1">Welcome to module</h1>
+    <p class="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex beatae
+      delectus porro nihil veniam molestias maxime consequatur, vero, iusto
+      commodi tempora possimus, odio id architecto odit tempore dignissimos
+      nostrum sed.
+    </p>
+    <a href="https://www.youtube.com/ " class="helloClass">YOUTUBE</a><br />
+    <a href="https://ijse.guide.lk">IJSE 01</a><br />
+    <a href="www.ijse.lk hi">IJSE 02</a><br /><br />
+    <a href="https://www.youtube.com/">Youtube 2</a>
+
+    <h1>Welcome to html</h1>
+    <p class="paragraph">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet velit
+      dolorum accusantium odio blanditiis modi magnam, assumenda totam iste
+      ipsum rem consequuntur porro ut, excepturi adipisci atque recusandae fuga
+      debitis.
+    </p>
+    <h1 class="helloClass">Welcome to CSS</h1>
+    <p class="paragraph2">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet velit
+      dolorum accusantium odio blanditiis modi magnam, assumenda totam iste
+      ipsum rem consequuntur porro ut, excepturi adipisci atque recusandae fuga
+      debitis.
+    </p>
+
+    <form>
+      <input
+        type="text"
+        name="userName"
+        id="userName"
+        placeholder="Name"
+      /><br /><br />
+      <input
+        type="text"
+        name="password"
+        id="password"
+        placeholder="Password"
+      /><br /><br />
+      <input type="file" name="file" id="file" /><br /><br />
+      <input type="submit" name="submit" id="submit" /><br /><br />
+    </form>
+
+    <ol>
+      <li>Java</li>
+      <li>Phython</li>
+      <li>Js</li>
+      <li>Php</li>
+    </ol>
+    <ol>
+      <li>Java</li>
+    </ol>
+  </body>
+</html>
