@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinators</title>
+  </head>
+  <body>
+    <style>
+      /* 1-chil combinator --> check derect child */
+      main > section > p {
+        color: green;
+      }
+
+      /* 2-decendent Combinator --> select the child if exists anywhere inside the parent  */
+      main p {
+        font-size: 20px;
+      }
+
+      /* 3-Adjecent Combinator --> select the element wich is located first after given first element(+)  */
+      h1 + ol {
+        color: brown;
+      }
+
+      /* 4-Genaral Sibling Combinator --> select the element wich is located after given first element(~)  */
+      ol ~ h1 {
+        color: blue;
+      }
+    </style>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime hic
+        reprehenderit asperiores beatae porro cupiditate a? Molestias,
+        laboriosam dignissimos consectetur porro nulla nemo minima nihil
+        voluptatibus odit corporis aut repellendus?
+      </p>
+
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias placeat
+          odit corrupti, nisi sequi velit quisquam necessitatibus officia
+          expedita exercitationem quas iusto cupiditate numquam recusandae
+          dolor, inventore, consequatur cumque modi!
+        </p>
+      </section>
+    </main>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, atque
+      itaque deserunt sequi eveniet alias officia facere ipsam reprehenderit
+      cupiditate consectetur. Excepturi enim adipisci unde tempore possimus
+      blanditiis, placeat inventore.
+    </p>
+
+    <h1>Hello</h1>
+    <ol>
+      <li>Java</li>
+      <li>Python</li>
+      <li>GoLang</li>
+    </ol>
+
+    <h2>Hello2</h2>
+    <ol>
+      <li>Java 02</li>
+      <li>Python 02</li>
+      <li>GoLang 02</li>
+    </ol>
+
+    <h1>Hello3</h1>
+    <ol>
+      <li>Java 03</li>
+      <li>Python 03</li>
+      <li>GoLang 03</li>
+    </ol>
+
+    <h1>Hello4</h1>
+    <ul>
+      <li>java4</li>
+      <li>php4</li>
+    </ul>
+  </body>
+</html>
