@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Cascade */
+      /* Process of combining different stylesheets and resolvonf conficts between different CSS rules and declarations.
+      when more than one rule applied to a certain element */
+
+      /* ---------------------------------------------------------------------------------------------------------------------------- */
+
+      /* 1-Importance  */
+
+      /* 2-Specificity */
+
+      /* Inline styles --> 1000
+         IDs --> 100
+         Classes,pesudo classes,attribute --> 10
+         Elements,pesudo elements --> 1 */
+
+      /* 3-Sourse Order */
+
+      /* ------------------------------------------------------------------------------------------------------------------------------- */
+
+      /* Importance --> Specificity --> Sourse Order */
+
+      /* ------------------------------------------------------------------------------------------------------------------------------- */
+
+      /* 4 */
+      h1 {
+        color: green;
+      }
+
+      /* 2 */
+      #myH1 {
+        color: blue;
+      }
+      /* 3 */
+      [id] {
+        color: bisque;
+      }
+      /* 3 */
+      .myH1Class {
+        color: rgb(23, 24, 24);
+      }
+
+      /* Importance 
+      * {
+        color: orange !important;
+        if we use "!important" this key word for a style firstly apply that style.
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- 1 -->
+    <h1 id="myH1" class="myH1Class">Hello Cascading</h1>
+  </body>
+</html>
