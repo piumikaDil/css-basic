@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Values_css</title>
+
+    <style>
+      /* 
+
+       > Integers(eg: 1,2)
+       > Decimal(eg: 0.5)
+       > Functions(calc(calculation))
+       > Percentages(100%)
+       > Kwywords (bold)
+
+       We need measurment units for some elements as length & font-size......
+
+       Measurment units;
+
+       1-Relative Measurment unit
+        vw - view port width
+        vh - view port heigth
+        em - relate with nearst parent [fonts]
+        rem - route equal mesurment unit(work with super parent-->root) [fonts]
+        % - percentage (defend with nearest parent value)
+
+
+       2-Absoulute Measurment unit
+         cm
+         mm
+         in
+         pc
+         px
+
+        
+        */
+
+      h1 {
+        background-color: cornflowerblue;
+        width: 300px;
+        /* width: 10cm;
+        width: 10mm; */
+      }
+
+      main {
+        font-size: 50px;
+      }
+
+      p {
+        width: 50vw;
+        font-size: 1em;
+        /* this element nearest parent is main. 1em = 1 * parent value --> 1*50 = 50 */
+      }
+
+      #p2 {
+        font-size: 1rem;
+        /* 1rem = 1 * root parent value --> 1*16 = 16 */
+      }
+
+      div {
+        width: 300px;
+      }
+
+      div > p {
+        background-color: aquamarine;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello Css Values</h1>
+
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae amet
+        quisquam qui, optio molestias sint velit quasi pariatur accusantium
+        consequuntur aliquam in quae animi aut vero. Explicabo labore
+        reprehenderit omnis!
+      </p>
+      <p id="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        voluptatibus, praesentium facere provident modi quis, quibusdam fuga,
+        expedita omnis quod unde. Dolore doloribus explicabo quaerat iste cumque
+        fuga expedita rerum!
+      </p>
+    </main>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis,
+        ratione harum hic dolore nobis accusamus accusantium, blanditiis quia
+        cum asperiores ipsa veniam. Dolorem odio placeat, sint perspiciatis
+        culpa voluptatem necessitatibus.
+      </p>
+    </div>
+  </body>
+</html>
